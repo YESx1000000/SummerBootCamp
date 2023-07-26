@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bree+Serif&family=PT+Serif&display=swap');
+
+:root {
+--bred: #d0b3b3ff;
+--bgreen: #b4d0b3ff;
+--bblue: #b3bcd0ff;
+--byellow: #d0d0b3ff;
+--tred: #472a2aff;
+--tgreen: #2a472a;
+--tblue: #2a3347ff;
+--tyellow: #47472aff;
+--dpurple: #644e7e;
+--ppurple: #494351;
+--ptpurple: #19171c;
+--bpurple: #c0b3d0ff;
+--tpurple: #372a47ff;
+--shadow: 0 8px 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+
 * {
-    font-family: sans-serif;
+    font-family: 'Bree Serif', serif;
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
@@ -7,27 +27,31 @@
 
 h1 {
     margin: 0;
+    font-family: 'Bree Serif', serif;
+    color: var(--tpurple);
 }
 
 p {
     font-weight: 300;
+    font-family: 'Bree Serif', serif;
 }
 
 header {
     position: fixed;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: var(--shadow);
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: white;
     font-weight: 300;
+    background-color: var(--bpurple);
     padding: 15px;
     justify-content: center;
+    border-bottom: 5px solid var(--tpurple);
 }
 
 header h1 {
     padding-right: 40px;
-    border-right: 1px solid gray;
+    border-right: 5px solid var(--tpurple);
 }
 
 header ul {
@@ -35,12 +59,14 @@ header ul {
     gap: 40px;
     list-style-type: none;
     margin-left: 40px;
+
 }
 
 header li a {
     text-decoration: none;
-    color: black;
     font-size: 1.2rem;
+   font-family: 'Bree Serif', serif;
+   color: var(--purple);
 }
 
 header li {
@@ -50,12 +76,12 @@ header li {
 
 header li :hover {
     text-decoration: underline;
-    color: #64829b;
+    color: var(--dpurple);
 }
 
 .content {
     padding: 74px 50px;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     display: flex;
     gap: 35px;
     flex-wrap: wrap;
@@ -64,13 +90,15 @@ header li :hover {
 
 .card {
     width: 28%;
-    background-color: white;
     color: #1e2d2fe8;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: var(--shadow);
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     min-width: 280px;
+    min-height:180px;
+    list-style-position: ;
+  
 }
 
 .card h2 {
@@ -88,17 +116,17 @@ button {
 }
 
 footer {
-    background-color: gray;
-    color: white;
-    
+    background-color: var(--ppurple);
+    color: #f0e5ff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     padding: 15px;
+    border-top: 5px solid var(--ptpurple);
 }
 
 footer a {
-    color: white;
+    color: #f0e5ff;
 }
 
 footer div {
@@ -135,16 +163,57 @@ footer div {
         margin: 0 auto;
         padding: 20px 0;
     }
-    .card {
-        margin: 0 auto;
-    }
     #homepage_fruit {
         margin-top: 100px;
     }
     .info {
-        margin-top: 100px;
+        margin-top: 11px;
     }
     .business_information {
         grid-row: 3;
     }
+}
+ul {
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.fun {
+font-family: 'Borel', cursive;
+}
+
+.red {
+  background-color: var(--bred);
+  border: 5px solid var(--tred);
+}
+
+.green {
+  background-color: var(--bgreen);
+  border: 5px solid var(--tgreen);
+}
+
+.blue {
+  background-color: var(--bblue);
+  border: 5px solid var(--tblue);
+}
+
+.yellow{
+  background-color: var(--byellow);
+  border: 5px solid var(--tyellow);
+}
+
+.textred {
+  color: var(--tred);
+}
+
+.textgreen {
+  color: var(--tgreen);
+}
+
+.textblue {
+  color: var(--tblue);
+}
+
+.textyellow {
+  color: var(--tyellow);
 }

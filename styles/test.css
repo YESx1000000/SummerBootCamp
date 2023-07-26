@@ -1,7 +1,7 @@
 img {
-  height: 100px;
-  width: 100px;
-  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 10%;
   border: solid;
   border-color: #550057;
   object-fit: cover;
